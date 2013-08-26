@@ -1,0 +1,4 @@
+
+#Set icons
+cd /PATH/TO/omnetpp-4.3/images
+ln -s ../samples/crSimulator.git/images/crSimulator

@@ -1,0 +1,482 @@
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+Tcl error: modinsp.cc#718: no such field in this object
+    while executing
+"opp_getobjectfield $msgptr kind"
+    (procedure "draw_message" line 15)
+    invoked from within
+"draw_message $c $msgptr $xx $yy"
+    (procedure "graphmodwin_draw_message_on_gate" line 26)
+    invoked from within
+"graphmodwin_draw_message_on_gate .ptr0x1678420-2.c ptr0x2d0e120 ptr0x2f49a30"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#1658: no such field in this object
+    while executing
+"opp_getobjectfield $msgptr kind"
+    (procedure "anim_remember_msg" line 7)
+    invoked from within
+"anim_remember_msg $msgptr"
+    (procedure "graphmodwin_animate_on_conn" line 8)
+    invoked from within
+"graphmodwin_animate_on_conn .ptr00ABFE88-2 ptr02E599B0 ptr04F41990 thru"
+
+
+Tcl error: modinsp.cc#718: can't read "anim_msg(ptr02E599B0:kind)": no such element in array
+    while executing
+"set msgkind $anim_msg($msgptr:kind)"
+    (procedure "draw_message" line 10)
+    invoked from within
+"draw_message $c $msgptr $xx $yy"
+    (procedure "graphmodwin_draw_message_on_gate" line 26)
+    invoked from within
+"graphmodwin_draw_message_on_gate .ptr00ABFE88-2.c ptr04F41CB0 ptr02E599B0"
+
+
+Tcl error: modinsp.cc#718: can't read "anim_msg(ptr02E599B0:kind)": no such element in array
+    while executing
+"set msgkind $anim_msg($msgptr:kind)"
+    (procedure "draw_message" line 10)
+    invoked from within
+"draw_message $c $msgptr $xx $yy"
+    (procedure "graphmodwin_draw_message_on_gate" line 26)
+    invoked from within
+"graphmodwin_draw_message_on_gate .ptr00ABFE88-2.c ptr04F41CB0 ptr02E599B0"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#1658: no such field in this object
+    while executing
+"opp_getobjectfield $msgptr kind"
+    (procedure "anim_remember_msg" line 7)
+    invoked from within
+"anim_remember_msg $msgptr"
+    (procedure "graphmodwin_animate_on_conn" line 8)
+    invoked from within
+"graphmodwin_animate_on_conn .ptr0262E230-2 ptr04E7C538 ptr04DFC9D8 thru"
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#1658: no such field in this object
+    while executing
+"opp_getobjectfield $msgptr kind"
+    (procedure "anim_remember_msg" line 7)
+    invoked from within
+"anim_remember_msg $msgptr"
+    (procedure "graphmodwin_animate_on_conn" line 8)
+    invoked from within
+"graphmodwin_animate_on_conn .ptr02D49A08-2 ptr044BDFF0 ptr04444678 thru"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#1658: no such field in this object
+    while executing
+"opp_getobjectfield $msgptr kind"
+    (procedure "anim_remember_msg" line 7)
+    invoked from within
+"anim_remember_msg $msgptr"
+    (procedure "graphmodwin_animate_on_conn" line 8)
+    invoked from within
+"graphmodwin_animate_on_conn .ptr009E12E8-2 ptr04E5B480 ptr04DC8D00 thru"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#1658: no such field in this object
+    while executing
+"opp_getobjectfield $msgptr kind"
+    (procedure "anim_remember_msg" line 7)
+    invoked from within
+"anim_remember_msg $msgptr"
+    (procedure "graphmodwin_animate_on_conn" line 8)
+    invoked from within
+"graphmodwin_animate_on_conn .ptr024DF880-2 ptr04E6F530 ptr04E78648 thru"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#961: null or malformed pointer
+    while executing
+"opp_msgarrtimefromnow $msgptr"
+    (procedure "redraw_timeline" line 68)
+    invoked from within
+"redraw_timeline"
+
+

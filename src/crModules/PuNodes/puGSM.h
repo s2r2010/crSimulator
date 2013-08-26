@@ -1,0 +1,34 @@
+
+/*
+ * Shah Nawaz Khan
+ * shah-nawaz.khan@tu-ilmenau.de
+ *
+ * It is intended to produce PU activity patterns that match the real observed activities for GSM band.
+ */
+
+#ifndef PUGSM_H_
+#define PUGSM_H_
+#include <omnetpp.h>
+#include "dataMsg_m.h"
+#include "Logging.h"
+
+class puGSM : public cSimpleModule{
+public:
+    puGSM();
+    virtual ~puGSM();
+protected:
+    virtual void handleMessage(cMessage *msg);
+    virtual void initialize();
+    void setTimer();
+    void broadcast(dataMsg *msg);
+    void scheduleEot();
+
+private:
+    cMessage *apptimer, *eot;
+    int totalChannels, puChannel;
+    double idleDuration, busyDuration; //arrivalRate, txDuration;
+};
+
+Define_Module(puGSM);
+
+#endif /* PUGSM_H_ */
