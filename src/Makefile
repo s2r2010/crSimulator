@@ -51,54 +51,54 @@ O = $(PROJECT_OUTPUT_DIR)/$(CONFIGNAME)/$(PROJECTRELATIVE_PATH)
 
 # Object files for local .cc and .msg files
 OBJS = \
-    $O/core/BasePuNode.o \
-    $O/core/BasePhyLayer.o \
-    $O/core/BaseAppLayer.o \
-    $O/core/BaseCrBattery.o \
-    $O/core/BaseDrm.o \
     $O/core/BaseStats.o \
-    $O/core/BaseScl.o \
-    $O/core/BaseMobilityComponent.o \
-    $O/core/BaseNetLayer.o \
-    $O/core/BaseMacLayer.o \
-    $O/core/BaseSpecSensor.o \
     $O/core/BaseCognitiveEngine.o \
+    $O/core/BaseDrm.o \
+    $O/core/BaseSpecSensor.o \
+    $O/core/BaseCrBattery.o \
+    $O/core/BaseScl.o \
+    $O/core/BasePhyLayer.o \
+    $O/core/BaseNetLayer.o \
+    $O/core/BaseMobilityComponent.o \
+    $O/core/BaseMacLayer.o \
+    $O/core/BasePuNode.o \
+    $O/core/BaseAppLayer.o \
     $O/crModules/AppLayer/crAppLayer.o \
     $O/crModules/Battery/crBattery.o \
     $O/crModules/CognitiveEngine/crCognitiveEngine.o \
-    $O/crModules/DRM/mysqlDRM.o \
     $O/crModules/DRM/testDRM.o \
     $O/crModules/DRM/sqliteDRM.o \
-    $O/crModules/MacLayer/switchMac.o \
+    $O/crModules/DRM/mysqlDRM.o \
     $O/crModules/MacLayer/cr80211b.o \
-    $O/crModules/MacLayer/crMacLayer.o \
-    $O/crModules/MacLayer/drmMacLayer.o \
+    $O/crModules/MacLayer/switchMac.o \
     $O/crModules/MacLayer/MobilityMacLayer.o \
+    $O/crModules/MacLayer/drmMacLayer.o \
+    $O/crModules/MacLayer/crMacLayer.o \
     $O/crModules/MobilityComponent/MobilityComponent.o \
     $O/crModules/NetLayer/crNetLayer.o \
     $O/crModules/PhyLayer/crPhyLayer.o \
-    $O/crModules/PuNodes/puISM.o \
     $O/crModules/PuNodes/puTest.o \
     $O/crModules/PuNodes/puGSM.o \
+    $O/crModules/PuNodes/puISM.o \
     $O/crModules/RFSpectrum/spectrum.o \
-    $O/crModules/RFSpectrum/datarateSpectrum.o \
     $O/crModules/RFSpectrum/suChannel.o \
+    $O/crModules/RFSpectrum/datarateSpectrum.o \
     $O/crModules/SigCommLink/crScl.o \
-    $O/crModules/SpectrumSensor/crSpecSensor.o \
     $O/crModules/SpectrumSensor/drmSpecSensor.o \
     $O/crModules/SpectrumSensor/MobilitySpecSensor.o \
+    $O/crModules/SpectrumSensor/crSpecSensor.o \
     $O/crModules/Statistics/crStats.o \
     $O/core/message-files/ctrlMsg_m.o \
-    $O/core/message-files/mobilityMsg_m.o \
     $O/core/message-files/timerMsg_m.o \
-    $O/core/message-files/dataMsg_m.o
+    $O/core/message-files/dataMsg_m.o \
+    $O/core/message-files/mobilityMsg_m.o
 
 # Message files
 MSGFILES = \
     core/message-files/ctrlMsg.msg \
-    core/message-files/mobilityMsg.msg \
     core/message-files/timerMsg.msg \
-    core/message-files/dataMsg.msg
+    core/message-files/dataMsg.msg \
+    core/message-files/mobilityMsg.msg
 
 #------------------------------------------------------------------------------
 
@@ -321,6 +321,7 @@ $O/crModules/PhyLayer/crPhyLayer.o: crModules/PhyLayer/crPhyLayer.cc \
 $O/crModules/PuNodes/puGSM.o: crModules/PuNodes/puGSM.cc \
 	core/Logging.h \
 	core/message-files/dataMsg_m.h \
+	core/message-files/timerMsg_m.h \
 	crModules/PuNodes/puGSM.h
 $O/crModules/PuNodes/puISM.o: crModules/PuNodes/puISM.cc \
 	core/BasePuNode.h \

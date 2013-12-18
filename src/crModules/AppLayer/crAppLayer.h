@@ -20,6 +20,7 @@ private:
     simsignal_t appRequests, appSuccess;
     simsignal_t txDataSignal, txAckSignal;
     simsignal_t rxDataSignal, rxAckSignal;
+    simsignal_t endSignal;
     int numberOfPackets;
     int myAddress;
     int destinationNode;

@@ -19,6 +19,8 @@ simple crAppLayer extends BaseAppLayer like IAppLayer
     @statistic[rxDataSignal](title="RX Data"; source="rxDataSignal"; record=count,count/60);
     @signal[rxAckSignal](type="int");
     @statistic[rxAckSignal](title="RX ACK"; source="rxAckSignal"; record=count,count/60);
+    @signal[endSignal](type="double");
+    @statistic[endSignal](title="Sim Time"; source="endSignal"; record=max);
 
     //@signal[packetRec](type="int");
     @display("i=block/app2");

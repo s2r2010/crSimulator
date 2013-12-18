@@ -8,8 +8,8 @@
 
 #ifndef PUGSM_H_
 #define PUGSM_H_
-#include <omnetpp.h>
 #include "dataMsg_m.h"
+#include "timerMsg_m.h"
 #include "Logging.h"
 
 class puGSM : public cSimpleModule{
@@ -24,7 +24,10 @@ protected:
     void scheduleEot();
 
 private:
+    void updateGUI(double time, int chID);
     cMessage *apptimer, *eot;
+    std::map<int, std::string> colorMap;
+    std::string puState;
     int totalChannels, puChannel;
     double idleDuration, busyDuration; //arrivalRate, txDuration;
 };

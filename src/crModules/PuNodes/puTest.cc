@@ -41,7 +41,7 @@ void puTest::initialize()
     }
 
     LOG("::: myChannel = "<<puChannel<< ", Arrival rate = "<<arrivalRate<< ", txDuration = "<<txDuration);
-    updateGUI(-1,-1);
+    //updateGUI(-1,-1);
 
     if ( status == true){
         setTimer();

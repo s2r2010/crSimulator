@@ -6,13 +6,13 @@
   </inputs>
   <datasets>
     <datasets name="MAC">
-      <items xsi:type="scave:Add" filterPattern="run(General-0*) AND module(*.macLayer) AND name(dataSignal:count/60)"/>
-      <items xsi:type="scave:BarChart" name="">
-        <properties name="Legend.Display" value="true"/>
-      </items>
+      <items xsi:type="scave:Add" filterPattern="run(General*) AND module(*.appLayer) AND name(endSignal:max)"/>
+      <items xsi:type="scave:BarChart" name="Times"/>
+      <items xsi:type="scave:Add" filterPattern="run(*) AND module(*.macLayer) AND name(handover:count)"/>
+      <items xsi:type="scave:BarChart" name="ho"/>
     </datasets>
   </datasets>
   <chartSheets>
-    <chartSheets name="default" charts="//@datasets/@datasets.0/@items.1"/>
+    <chartSheets name="default" charts="//@datasets/@datasets.0/@items.1 //@datasets/@datasets.0/@items.3"/>
   </chartSheets>
 </scave:Analysis>

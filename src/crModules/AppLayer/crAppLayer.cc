@@ -20,6 +20,7 @@ void crAppLayer::initialize()
     txAckSignal = registerSignal("txAckSignal");
     rxDataSignal = registerSignal("rxDataSignal");
     rxAckSignal = registerSignal("rxAckSignal");
+    endSignal = registerSignal("endSignal");
 
     myAddress = getParentModule()->par("address");
     ackEnabled = true;
@@ -63,8 +64,10 @@ void crAppLayer::handleMessage(cMessage *msg)
             case TxSUCCESS:
                 emit(appSuccess, 1);
                 LOG("crAPPLayer-" << getIndex() <<": Successful Communication.");
-                setSUTransmitTimer(1);
+                //setSUTransmitTimer(1);
                 delete recMsg;
+                emit(endSignal, simTime());
+                endSimulation();
                 break;
             case TxFAIL:
                 setSUTransmitTimer(1);
