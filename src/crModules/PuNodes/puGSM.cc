@@ -3,7 +3,7 @@
  * Shah Nawaz Khan
  * shah-nawaz.khan@tu-ilmenau.de
  *
- * It is intended to produce PU activity patterns that match the real observed activities for GSM.
+ * It is intended to produce PU activity patterns that match the real observed activities for GSM. In prototype state, needs development
  */
 
 #include "puGSM.h"
@@ -26,13 +26,15 @@ void puGSM::initialize()
         puChannel = 1;
         //idleDuration = exponential(.3);
         //busyDuration = 1 - idleDuration;
-        idleDuration = 0.4000;
-        busyDuration = 0.6000;
+        puColor = "red";
+        idleDuration = 0.0400;
+        busyDuration = 0.0600;
     }
     else if (strcmp("gsm2", getParentModule()->getName()) == 0){
         puChannel = 2;
         //idleDuration = exponential(.3);
         //busyDuration = 1 - idleDuration;
+        puColor = "blue";
         idleDuration = 0.6000;
         busyDuration = 0.4000;
     }
@@ -61,6 +63,8 @@ void puGSM::handleMessage(cMessage *msg)
         broadcast(msg);
         scheduleEot();
         LOG("Sending PUSTART. Starting Data transmission.");
+        std::string display = "i=device/antennatower,"+puColor+",40";
+        this->getParentModule()->setDisplayString(display.c_str());
 
         // reset duration of next comm. 60% duty cycle
         //idleDuration = exponential(0.3);
@@ -79,6 +83,7 @@ void puGSM::handleMessage(cMessage *msg)
 
         setTimer();  // Schedule another PU transmission.
         LOG("Sending PUEND. Data transmission done.");
+        this->getParentModule()->setDisplayString("i=device/antennatower");
     }
     else
     {

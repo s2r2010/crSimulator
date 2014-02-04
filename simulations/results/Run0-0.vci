@@ -1,0 +1,26 @@
+file 3938 1391514394                                            
+version 2
+run Run0-0-20140204-12:46:18-4868
+attr configname Run0
+attr datetime 20140204-12:46:18
+attr experiment Run0
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network crSimulator.crModules.CrNetworks.crDemo
+attr processid 4868
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 0  crDemo.CR1.specSensor  sensingSignal:vector  ETV
+attr source  sensingSignal
+attr title  "Spectrum Sensing, vector"
+vector 1  crDemo.CR2.specSensor  sensingSignal:vector  ETV
+attr source  sensingSignal
+attr title  "Spectrum Sensing, vector"
+0	659 3232 82 556 0.548863502304 0.64965 196 1 2 295 493
+1	3891 47 91 207 0.549046835637 0.600283333333 2 1 2 3 5

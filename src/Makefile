@@ -2,7 +2,7 @@
 # OMNeT++/OMNEST Makefile for crSimulator
 #
 # This file was generated with the command:
-#  opp_makemake -f --deep -I/usr/include/mysql -I/usr/include -lmysqlclient -lsqlite3
+#  opp_makemake -f --deep -I/usr/include/mysql -I/usr/include
 #
 
 # Name of target to be created (-o option)
@@ -27,7 +27,6 @@ INCLUDE_PATH = \
     -IcrModules/CrNetworks \
     -IcrModules/CrNodes \
     -IcrModules/DRM \
-    -IcrModules/DRM/Database \
     -IcrModules/MacLayer \
     -IcrModules/MobilityComponent \
     -IcrModules/NetLayer \
@@ -42,7 +41,7 @@ INCLUDE_PATH = \
 EXTRA_OBJS =
 
 # Additional libraries (-L, -l options)
-LIBS =  -lmysqlclient -lsqlite3
+LIBS =
 
 # Output directory
 PROJECT_OUTPUT_DIR = ../out
@@ -51,54 +50,53 @@ O = $(PROJECT_OUTPUT_DIR)/$(CONFIGNAME)/$(PROJECTRELATIVE_PATH)
 
 # Object files for local .cc and .msg files
 OBJS = \
-    $O/core/BaseStats.o \
-    $O/core/BaseCognitiveEngine.o \
-    $O/core/BaseDrm.o \
-    $O/core/BaseSpecSensor.o \
-    $O/core/BaseCrBattery.o \
-    $O/core/BaseScl.o \
-    $O/core/BasePhyLayer.o \
-    $O/core/BaseNetLayer.o \
-    $O/core/BaseMobilityComponent.o \
-    $O/core/BaseMacLayer.o \
-    $O/core/BasePuNode.o \
     $O/core/BaseAppLayer.o \
+    $O/core/BaseCognitiveEngine.o \
+    $O/core/BaseCrBattery.o \
+    $O/core/BaseDrm.o \
+    $O/core/BaseMacLayer.o \
+    $O/core/BaseMobilityComponent.o \
+    $O/core/BaseNetLayer.o \
+    $O/core/BasePhyLayer.o \
+    $O/core/BasePuNode.o \
+    $O/core/BaseScl.o \
+    $O/core/BaseSpecSensor.o \
+    $O/core/BaseStats.o \
     $O/crModules/AppLayer/crAppLayer.o \
+    $O/crModules/AppLayer/testApp.o \
     $O/crModules/Battery/crBattery.o \
     $O/crModules/CognitiveEngine/crCognitiveEngine.o \
     $O/crModules/DRM/testDRM.o \
-    $O/crModules/DRM/sqliteDRM.o \
-    $O/crModules/DRM/mysqlDRM.o \
     $O/crModules/MacLayer/cr80211b.o \
-    $O/crModules/MacLayer/switchMac.o \
-    $O/crModules/MacLayer/MobilityMacLayer.o \
-    $O/crModules/MacLayer/drmMacLayer.o \
     $O/crModules/MacLayer/crMacLayer.o \
+    $O/crModules/MacLayer/drmMacLayer.o \
+    $O/crModules/MacLayer/MobilityMacLayer.o \
+    $O/crModules/MacLayer/switchMac.o \
     $O/crModules/MobilityComponent/MobilityComponent.o \
     $O/crModules/NetLayer/crNetLayer.o \
     $O/crModules/PhyLayer/crPhyLayer.o \
-    $O/crModules/PuNodes/puTest.o \
     $O/crModules/PuNodes/puGSM.o \
     $O/crModules/PuNodes/puISM.o \
+    $O/crModules/PuNodes/puTest.o \
+    $O/crModules/RFSpectrum/datarateSpectrum.o \
     $O/crModules/RFSpectrum/spectrum.o \
     $O/crModules/RFSpectrum/suChannel.o \
-    $O/crModules/RFSpectrum/datarateSpectrum.o \
     $O/crModules/SigCommLink/crScl.o \
+    $O/crModules/SpectrumSensor/crSpecSensor.o \
     $O/crModules/SpectrumSensor/drmSpecSensor.o \
     $O/crModules/SpectrumSensor/MobilitySpecSensor.o \
-    $O/crModules/SpectrumSensor/crSpecSensor.o \
     $O/crModules/Statistics/crStats.o \
     $O/core/message-files/ctrlMsg_m.o \
-    $O/core/message-files/timerMsg_m.o \
     $O/core/message-files/dataMsg_m.o \
-    $O/core/message-files/mobilityMsg_m.o
+    $O/core/message-files/mobilityMsg_m.o \
+    $O/core/message-files/timerMsg_m.o
 
 # Message files
 MSGFILES = \
     core/message-files/ctrlMsg.msg \
-    core/message-files/timerMsg.msg \
     core/message-files/dataMsg.msg \
-    core/message-files/mobilityMsg.msg
+    core/message-files/mobilityMsg.msg \
+    core/message-files/timerMsg.msg
 
 #------------------------------------------------------------------------------
 
@@ -181,7 +179,6 @@ clean:
 	$(Q)-rm -f crModules/CrNetworks/*_m.cc crModules/CrNetworks/*_m.h
 	$(Q)-rm -f crModules/CrNodes/*_m.cc crModules/CrNodes/*_m.h
 	$(Q)-rm -f crModules/DRM/*_m.cc crModules/DRM/*_m.h
-	$(Q)-rm -f crModules/DRM/Database/*_m.cc crModules/DRM/Database/*_m.h
 	$(Q)-rm -f crModules/MacLayer/*_m.cc crModules/MacLayer/*_m.h
 	$(Q)-rm -f crModules/MobilityComponent/*_m.cc crModules/MobilityComponent/*_m.h
 	$(Q)-rm -f crModules/NetLayer/*_m.cc crModules/NetLayer/*_m.h
@@ -197,7 +194,7 @@ cleanall: clean
 
 depend:
 	$(qecho) Creating dependencies...
-	$(Q)$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES)  ./*.cc core/*.cc core/message-files/*.cc crModules/*.cc crModules/AppLayer/*.cc crModules/Battery/*.cc crModules/CognitiveEngine/*.cc crModules/CrNetworks/*.cc crModules/CrNodes/*.cc crModules/DRM/*.cc crModules/DRM/Database/*.cc crModules/MacLayer/*.cc crModules/MobilityComponent/*.cc crModules/NetLayer/*.cc crModules/PhyLayer/*.cc crModules/PuNodes/*.cc crModules/RFSpectrum/*.cc crModules/SigCommLink/*.cc crModules/SpectrumSensor/*.cc crModules/Statistics/*.cc
+	$(Q)$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES)  ./*.cc core/*.cc core/message-files/*.cc crModules/*.cc crModules/AppLayer/*.cc crModules/Battery/*.cc crModules/CognitiveEngine/*.cc crModules/CrNetworks/*.cc crModules/CrNodes/*.cc crModules/DRM/*.cc crModules/MacLayer/*.cc crModules/MobilityComponent/*.cc crModules/NetLayer/*.cc crModules/PhyLayer/*.cc crModules/PuNodes/*.cc crModules/RFSpectrum/*.cc crModules/SigCommLink/*.cc crModules/SpectrumSensor/*.cc crModules/Statistics/*.cc
 
 # DO NOT DELETE THIS LINE -- make depend depends on it.
 $O/core/BaseAppLayer.o: core/BaseAppLayer.cc \
@@ -245,6 +242,8 @@ $O/crModules/AppLayer/crAppLayer.o: crModules/AppLayer/crAppLayer.cc \
 	core/message-files/ctrlMsg_m.h \
 	core/message-files/dataMsg_m.h \
 	crModules/AppLayer/crAppLayer.h
+$O/crModules/AppLayer/testApp.o: crModules/AppLayer/testApp.cc \
+	crModules/AppLayer/testApp.h
 $O/crModules/Battery/crBattery.o: crModules/Battery/crBattery.cc \
 	core/BaseCrBattery.h \
 	crModules/Battery/crBattery.h
@@ -252,14 +251,6 @@ $O/crModules/CognitiveEngine/crCognitiveEngine.o: crModules/CognitiveEngine/crCo
 	core/message-files/ctrlMsg_m.h \
 	core/message-files/dataMsg_m.h \
 	crModules/CognitiveEngine/crCognitiveEngine.h
-$O/crModules/DRM/mysqlDRM.o: crModules/DRM/mysqlDRM.cc \
-	core/message-files/ctrlMsg_m.h \
-	core/message-files/dataMsg_m.h \
-	crModules/DRM/mysqlDRM.h
-$O/crModules/DRM/sqliteDRM.o: crModules/DRM/sqliteDRM.cc \
-	core/message-files/ctrlMsg_m.h \
-	core/message-files/dataMsg_m.h \
-	crModules/DRM/sqliteDRM.h
 $O/crModules/DRM/testDRM.o: crModules/DRM/testDRM.cc \
 	core/message-files/ctrlMsg_m.h \
 	core/message-files/dataMsg_m.h \

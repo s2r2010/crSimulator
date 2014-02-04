@@ -6,7 +6,7 @@ import crSimulator.core.*;
 simple puGSM extends PuNode like IPuNode
 {
     parameters:
-        @class(puGSM);      
+        @class(puGSM);
 }
 
 simple puISM extends PuNode like IPuNode
@@ -30,8 +30,8 @@ module BasePuNode
         double puTxDuration = default(5.0);
         string puType;// = default("testPU");
         int address = default(1);
-        @display("i=crSimulator/images/crSimulator/antenna");
-        
+        @display("i=device/antennatower");
+
     gates:
         inout ports[];
 

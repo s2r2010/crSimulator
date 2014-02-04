@@ -17,33 +17,31 @@ network crMobilityNetwork extends baseCrNetwork
             neighbors = "2";
             @display("p=370,157");
         }
-        CR2: MobilityCrNode {
-            address = 2;
-            broadcastAddress = -1;            
-            neighbors = "1";
-            @display("p=208,157");
-        }
         pu1: BasePuNode {
             address = 3;
-            puChannel = intuniform(0,3);            
+            puChannel = intuniform(0,3);
             @display("p=292,232");
         }
         pu2: BasePuNode {
             address = 4;
-            puChannel = intuniform(0,3);            
+            puChannel = intuniform(0,3);
             @display("p=292,47");
         }
         pu3: BasePuNode {
             address = 5;
             puChannel = intuniform(0,3);
-            @display("p=64,157");
+            @display("p=86,220");
+        }
+        gsm: GSM {
+            @display("p=98,61");
         }
     connections:
-        CR2.ports++ <--> datarateSpectrum <--> CR1.ports++;
         CR1.ports++ <--> datarateSpectrum <--> pu1.ports++;
-        CR2.ports++ <--> datarateSpectrum <--> pu1.ports++;
         CR1.ports++ <--> datarateSpectrum <--> pu2.ports++;
-        CR2.ports++ <--> datarateSpectrum <--> pu2.ports++;
-        CR2.ports++ <--> datarateSpectrum <--> pu3.ports++;
+        pu2.ports++ <--> datarateSpectrum <--> pu3.ports++;
+        pu3.ports++ <--> datarateSpectrum <--> pu1.ports++;
+        gsm.ports++ <--> datarateSpectrum <--> pu2.ports++;
+        gsm.ports++ <--> datarateSpectrum <--> pu3.ports++;
+        gsm.ports++ <--> datarateSpectrum <--> CR1.ports++;
 }
 

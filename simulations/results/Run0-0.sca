@@ -1,0 +1,125 @@
+version 2
+run Run0-0-20140204-12:46:18-4868
+attr configname Run0
+attr datetime 20140204-12:46:18
+attr experiment Run0
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network crSimulator.crModules.CrNetworks.crDemo
+attr processid 4868
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar crDemo.CR1.appLayer 	endSignal:max 	-1.#IND
+attr source  endSignal
+attr title  "Sim Time, max"
+scalar crDemo.CR1.appLayer 	rxAckSignal:count 	0
+attr source  rxAckSignal
+attr title  "RX ACK, count"
+scalar crDemo.CR1.appLayer 	rxAckSignal:count/60 	-1.#IND
+attr source  rxAckSignal
+attr title  "RX ACK, count/60"
+scalar crDemo.CR1.appLayer 	rxDataSignal:count 	0
+attr source  rxDataSignal
+attr title  "RX Data, count"
+scalar crDemo.CR1.appLayer 	rxDataSignal:count/60 	-1.#IND
+attr source  rxDataSignal
+attr title  "RX Data, count/60"
+scalar crDemo.CR1.appLayer 	txAckSignal:count 	0
+attr source  txAckSignal
+attr title  "TX ACK, count"
+scalar crDemo.CR1.appLayer 	txAckSignal:count/60 	-1.#IND
+attr source  txAckSignal
+attr title  "TX ACK, count/60"
+scalar crDemo.CR1.appLayer 	txDataSignal:count 	0
+attr source  txDataSignal
+attr title  "TX Data, count"
+scalar crDemo.CR1.appLayer 	txDataSignal:count/60 	-1.#IND
+attr source  txDataSignal
+attr title  "TX Data, count/60"
+scalar crDemo.CR1.appLayer 	appSuccess:count 	0
+attr source  appSuccess
+attr title  "ApplicationSessions, count"
+scalar crDemo.CR1.appLayer 	appRequests:count 	1
+attr source  appRequests
+attr title  "ApplicationRequests, count"
+scalar crDemo.CR1.macLayer 	handover:count 	2
+attr source  handover
+attr title  "Handovers, count"
+scalar crDemo.CR1.macLayer 	handover:count/60 	0.033333333333333
+attr source  handover
+attr title  "Handovers, count/60"
+scalar crDemo.CR1.macLayer 	nackSignal:count 	2
+attr source  nackSignal
+attr title  "NACK, count"
+scalar crDemo.CR1.macLayer 	dataSignal:count 	0
+attr source  dataSignal
+attr title  "Data Received, count"
+scalar crDemo.CR1.macLayer 	dataSignal:count/60 	-1.#IND
+attr source  dataSignal
+attr title  "Data Received, count/60"
+scalar crDemo.CR1.macLayer 	rtsSignal:count 	2
+attr source  rtsSignal
+attr title  "RTS Attempts, count"
+scalar crDemo.CR1.specSensor 	sensingSignal:count 	196
+attr source  sensingSignal
+attr title  "Spectrum Sensing, count"
+scalar crDemo.CR2.appLayer 	endSignal:max 	-1.#IND
+attr source  endSignal
+attr title  "Sim Time, max"
+scalar crDemo.CR2.appLayer 	rxAckSignal:count 	0
+attr source  rxAckSignal
+attr title  "RX ACK, count"
+scalar crDemo.CR2.appLayer 	rxAckSignal:count/60 	-1.#IND
+attr source  rxAckSignal
+attr title  "RX ACK, count/60"
+scalar crDemo.CR2.appLayer 	rxDataSignal:count 	0
+attr source  rxDataSignal
+attr title  "RX Data, count"
+scalar crDemo.CR2.appLayer 	rxDataSignal:count/60 	-1.#IND
+attr source  rxDataSignal
+attr title  "RX Data, count/60"
+scalar crDemo.CR2.appLayer 	txAckSignal:count 	0
+attr source  txAckSignal
+attr title  "TX ACK, count"
+scalar crDemo.CR2.appLayer 	txAckSignal:count/60 	-1.#IND
+attr source  txAckSignal
+attr title  "TX ACK, count/60"
+scalar crDemo.CR2.appLayer 	txDataSignal:count 	0
+attr source  txDataSignal
+attr title  "TX Data, count"
+scalar crDemo.CR2.appLayer 	txDataSignal:count/60 	-1.#IND
+attr source  txDataSignal
+attr title  "TX Data, count/60"
+scalar crDemo.CR2.appLayer 	appSuccess:count 	0
+attr source  appSuccess
+attr title  "ApplicationSessions, count"
+scalar crDemo.CR2.appLayer 	appRequests:count 	0
+attr source  appRequests
+attr title  "ApplicationRequests, count"
+scalar crDemo.CR2.macLayer 	handover:count 	2
+attr source  handover
+attr title  "Handovers, count"
+scalar crDemo.CR2.macLayer 	handover:count/60 	0.033333333333333
+attr source  handover
+attr title  "Handovers, count/60"
+scalar crDemo.CR2.macLayer 	nackSignal:count 	0
+attr source  nackSignal
+attr title  "NACK, count"
+scalar crDemo.CR2.macLayer 	dataSignal:count 	18
+attr source  dataSignal
+attr title  "Data Received, count"
+scalar crDemo.CR2.macLayer 	dataSignal:count/60 	0.3
+attr source  dataSignal
+attr title  "Data Received, count/60"
+scalar crDemo.CR2.macLayer 	rtsSignal:count 	0
+attr source  rtsSignal
+attr title  "RTS Attempts, count"
+scalar crDemo.CR2.specSensor 	sensingSignal:count 	2
+attr source  sensingSignal
+attr title  "Spectrum Sensing, count"

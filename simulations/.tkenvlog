@@ -480,3 +480,50 @@ Tcl error: tkenv.cc#961: null or malformed pointer
 "redraw_timeline"
 
 
+----------------------------------------------------------------------
+
+
+Tcl error: modinsp.cc#756: ptr0x3b92f80 not found
+    while executing
+"error "$tag not found""
+    (procedure "get_submod_coords" line 4)
+    invoked from within
+"get_submod_coords $c $modptr"
+    (procedure "graphmodwin_draw_nexteventmarker" line 2)
+    invoked from within
+"graphmodwin_draw_nexteventmarker .ptr0x3b42050-2.c ptr0x3b92f80 1"
+
+
+Tcl error: modinsp.cc#756: ptr0x3b92f80 not found
+    while executing
+"error "$tag not found""
+    (procedure "get_submod_coords" line 4)
+    invoked from within
+"get_submod_coords $c $modptr"
+    (procedure "graphmodwin_draw_nexteventmarker" line 2)
+    invoked from within
+"graphmodwin_draw_nexteventmarker .ptr0x3b42050-2.c ptr0x3b92f80 1"
+
+
+Tcl error: modinsp.cc#756: ptr0x3b92f80 not found
+    while executing
+"error "$tag not found""
+    (procedure "get_submod_coords" line 4)
+    invoked from within
+"get_submod_coords $c $modptr"
+    (procedure "graphmodwin_draw_nexteventmarker" line 2)
+    invoked from within
+"graphmodwin_draw_nexteventmarker .ptr0x3b42050-2.c ptr0x3b92f80 1"
+
+
+Tcl error: modinsp.cc#756: ptr0x3b92f80 not found
+    while executing
+"error "$tag not found""
+    (procedure "get_submod_coords" line 4)
+    invoked from within
+"get_submod_coords $c $modptr"
+    (procedure "graphmodwin_draw_nexteventmarker" line 2)
+    invoked from within
+"graphmodwin_draw_nexteventmarker .ptr0x3b42050-2.c ptr0x3b92f80 1"
+
+

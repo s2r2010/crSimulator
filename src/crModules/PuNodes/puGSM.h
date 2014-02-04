@@ -28,6 +28,7 @@ private:
     cMessage *apptimer, *eot;
     std::map<int, std::string> colorMap;
     std::string puState;
+    std::string puColor;
     int totalChannels, puChannel;
     double idleDuration, busyDuration; //arrivalRate, txDuration;
 };
